@@ -1,0 +1,26 @@
+<div class="container">
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>
+                    <p>{{user.username}}</p>
+                </td>
+                <td>
+                    <p>{{user.email}}</p>
+                </td>
+                <td>
+                    <p>{{user.password}}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
