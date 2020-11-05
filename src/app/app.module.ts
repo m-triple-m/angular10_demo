@@ -20,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { AdminComponent } from './admin/admin.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
     HeaderComponent,
     SignupComponent,
     AdminComponent,
+    ChatComponent,
 
   ],
   imports: [

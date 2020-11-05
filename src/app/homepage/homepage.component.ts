@@ -20,6 +20,8 @@ export class HomepageComponent implements OnInit {
     let ans = this.fact(this.num);
 
     console.log(ans);
+
+    var swiper = new Swiper('.swiper-container');
   }
 
   fact(n){
