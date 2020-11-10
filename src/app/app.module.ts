@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,6 +19,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { AdminComponent } from './admin/admin.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { ChatComponent } from './chat/chat.component';
+import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,10 @@ import { ChatComponent } from './chat/chat.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,MatCardModule,MatButtonModule,MatProgressBarModule,
-    SweetAlert2Module.forRoot()
+    SweetAlert2Module.forRoot(),
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbLayoutModule,
+    NbEvaIconsModule
 
     // ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],

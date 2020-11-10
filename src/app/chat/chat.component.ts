@@ -13,14 +13,15 @@ export class ChatComponent implements OnInit {
 
   ngOnInit(): void {
     this.chatservice.reciveMsg().subscribe(data => {
+      data['sent'] = false;
       console.log(data);
-
       this.messages.push(data);
     })
   }
 
-  sendMsg(msg){
-    let obj = { message : msg};
+  sendMsg(msg){ 
+    let obj = { message : msg, sent : true };
+    console.log(obj);
     this.chatservice.sendMsg(obj);
     this.messages.push(obj);
   }
