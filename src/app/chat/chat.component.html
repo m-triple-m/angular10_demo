@@ -1,6 +1,6 @@
 <div class="container">
     <p class="display-4 text-center">Chatting App</p>
-    <div class="card" style="height: 20rem;">
+    <div class="card" style="height: 30rem;overflow-y: auto;">
         <div class="card-body">
             <p *ngFor="let msg of messages" class="msg" [ngClass]="msg.sent?'send':'rec'">
                 {{msg.message}}
